@@ -1,0 +1,322 @@
+/* =========================================================
+   INDEX & GLOBAL
+========================================================= */
+body {
+  padding-top: 30px;
+}
+
+.calc{
+  display: inline-block;
+       padding: 8px 16px;
+       font-weight: 500;
+       text-decoration: none;
+       color: #121212;
+       border-radius: 8px;
+       background-color: rgba(0, 0, 0, 0.15);
+       transition:
+         color 0.25s ease,
+         background-color 0.25s ease,
+         transform 0.2s ease;
+}
+
+/* =========================================================
+   HERO SECTIONS
+========================================================= */
+.hero {
+  min-height: 72vh;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../photo/cd5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-about {
+  min-height: 72vh;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../photo/cd5.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* =========================================================
+   HOME PAGE OPTION CARDS
+========================================================= */
+.option-card {
+  height: 85px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background: rgba(240, 240, 240, 0.75);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.option-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.35);
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+.navbar-nav .nav-link {
+  padding: 0.75rem 1.4rem;
+  color: #e4dede;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.navbar.fixed-top {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* =========================================================
+   CATALOGUE / PROMO CARDS
+========================================================= */
+.catalogue-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.catalogue-card:hover {
+  transform: translateY(-4px);
+}
+
+.catalogue-card img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.catalogue-card .card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.catalogue-card .card-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.catalogue-card .price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.car-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Shared card hover (kept once) */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* =========================================================
+   ABOUT US
+========================================================= */
+.container4 .contact {
+  max-width: 80%;
+  margin: auto;
+  color: #111;
+}
+
+.container4 .contact span {
+  font-weight: 600;
+}
+
+.container4 .contact p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   MODAL (CAR DETAILS)
+========================================================= */
+#carModal .modal-body {
+  gap: 1rem;
+}
+
+#carModal img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+#carModal .modal-body div {
+  font-size: 1.1rem;
+}
+
+.modal-car-img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.modal-car-img, #buyCarImage, #testDriveCarImage {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.car-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.car-info .price {
+  font-size: 1.4rem;
+}
+
+.car-info .price del {
+  margin-right: 10px;
+  color: #888;
+}
+
+.car-info .price span {
+  font-weight: bold;
+  color: #f4efef;
+}
+
+/* =========================================================
+   MODAL BUTTONS
+========================================================= */
+.modal-footer .modal-btn,
+.modal-footer .btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-footer .modal-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.modal-footer .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* =========================================================
+   PROMO GRID (LARGE SCREENS)
+========================================================= */
+@media (min-width: 1200px) {
+  #promoGrid .card {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* DARK MODE*/
+
+body.dark-mode {
+  background-color: #212020;
+  color: #eaeaea;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+  background-color: #454343 !important;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+  color: #f3eded;
+}
+
+body.dark-mode .navbar-nav .nav-link:hover,
+body.dark-mode .navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* Cards (catalogue, promo, hero options) */
+body.dark-mode .card,
+body.dark-mode .option-card,
+body.dark-mode .glass-card {
+  background-color: #3f3d3d;
+  color: #eaeaea;
+}
+
+/* Card text */
+body.dark-mode .card-title,
+body.dark-mode .card-text {
+  color: #eaeaea;
+}
+
+/* Alerts */
+body.dark-mode .alert {
+  background-color: #e3dada;
+  color: #111010;
+  border-color: #444;
+}
+
+/* Modal */
+body.dark-mode .modal-content {
+  background-color: #3f3d3d;
+  color: #eaeaea;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #454343;
+  color: #eaeaea;
+}
+
+/* Inputs */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #eaeaea;
+  border: 1px solid #555;
+}
+
+/* Buttons */
+body.dark-mode .btn-secondary {
+  background-color: #444;
+  border-color: #555;
+}
+
+body.dark-mode .calc {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
