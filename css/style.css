@@ -213,7 +213,7 @@ body {
 
 .car-info .price span {
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 /* =========================================================
@@ -319,5 +319,6 @@ body.dark-mode .calc {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15);
 }
+
 
 
