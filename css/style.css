@@ -213,11 +213,11 @@ body {
 
 .car-info .price span {
   font-weight: bold;
-  color: #f4efef;
+  color: black;
 }
 
 /* =========================================================
-   MODAL BUTTONS
+MODAL BUTTONS
 ========================================================= */
 .modal-footer .modal-btn,
 .modal-footer .btn {
@@ -319,4 +319,5 @@ body.dark-mode .calc {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15);
 }
+
 
